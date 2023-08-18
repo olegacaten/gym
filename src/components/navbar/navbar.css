@@ -1,0 +1,235 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  padding: 0 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--color-bg);
+  z-index: 5;
+}
+
+.navbar__links__navbar__logo img {
+  width: 128px;
+  height: 77px;
+  margin: 0.5rem 0;
+}
+
+.navbar__burger__logo img {
+  width: 128px;
+  height: 77px;
+  margin: 0.5rem 0;
+}
+
+.navbar__right__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar__right__links a {
+  color: #fbfbfb;
+  font-size: 26px;
+  font-family: Orbitron;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  padding: 0 2rem;
+}
+
+.navbar__right__links-right__contact button {
+  width: 230px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #e1cb00;
+  color: #fbfbfb;
+  font-size: 26px;
+  font-family: Orbitron;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.navbar__right__links-right__contact button:hover {
+  box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24),
+    0 17px 50px 0 rgba(255, 255, 255, 0.19);
+  background-color: #edd500;
+  color: #f2f5e7;
+}
+
+.navbar__right__links-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar__right__links-right__lang {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 26px;
+  font-family: Orbitron;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  cursor: pointer;
+}
+.navbar__right__links-right__lang img {
+  padding: 0 1rem;
+}
+
+.navbar__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar__burger {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar__burger__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  color: black;
+  text-align: end;
+  background: white;
+  padding: 2.4rem;
+  right: 0;
+  position: absolute;
+  border-radius: 4px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.navbar__burger__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: end;
+  padding: 2.4rem;
+  top:0;
+  right: 0;
+  position: absolute;
+  border-radius: 4px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.navbar__burger__container__links{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: end;
+}
+
+@media screen and (max-width: 1050px) {
+  .navbar__links__container {
+    display: none;
+  }
+  .navbar__menu {
+    display: flex;
+  }
+  .navbar__links__logo img {
+    width: 100px;
+    height: 37px;
+    cursor: pointer;
+  }
+  .navbar__links__container p,
+  .navbar__menu-container p {
+    font-size: 19px;
+  }
+  .navbar__links {
+    display: none;
+  }
+  .navbar__burger {
+    display: flex;
+  }
+  .navbar__right__links a{
+    color: black;
+    padding-bottom: 0.5rem;
+    
+  }
+  .navbar__right__links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+
+  }
+  .navbar__right__links-right__lang img{
+    filter: invert(100%);
+  }
+  .navbar__right__links-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    padding: 2rem 4rem;
+  }
+
+  .navbar-line {
+    padding: 0;
+  }
+  .navbar__links__logo img {
+    width: 81px;
+    height: 17px;
+  }
+  .navbar__links__container p,
+  .navbar__menu-container p {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    padding: 0.5rem 2rem;
+  }
+  .navbar__links__logo {
+    margin-left: 1rem;
+  }
+  .navbar__links__container p,
+  .navbar__menu-container p {
+    font-size: 16px;
+  }
+}

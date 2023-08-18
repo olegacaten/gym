@@ -1,0 +1,102 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
+  font-weight: 800;
+  background-color: #e1cb00;
+  color: #070707;
+  font-family: Orbitron;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.info__availability,
+.info__address,
+.info__contact {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  align-content: center;
+}
+.info__contact__title,
+.info__availability__title,
+.info__address__title {
+  font-size: 30px;
+  padding: 0.2rem;
+}
+
+.info__contact__context,
+.info__availability__context,
+.info__address__context {
+  font-size: 25px;
+  padding: 0.2rem;
+}
+
+@media (max-width: 1800px) {
+  .info__contact__title,
+  .info__availability__title,
+  .info__address__title {
+    font-size: 25px;
+  }
+
+  .info__contact__context,
+  .info__availability__context,
+  .info__address__context {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .info__contact__title,
+  .info__availability__title,
+  .info__address__title {
+    font-size: 20px;
+  }
+
+  .info__contact__context,
+  .info__availability__context,
+  .info__address__context {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1050px) {
+  .info__contact__title,
+  .info__availability__title,
+  .info__address__title {
+    font-size: 18px;
+  }
+
+  .info__contact__context,
+  .info__availability__context,
+  .info__address__context {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 750px) {
+  .info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 0.5rem;
+  }
+
+  .info__availability,
+  .info__address,
+  .info__contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 490px) {
+}

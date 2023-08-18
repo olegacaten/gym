@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import MainLayout from "./layout/MainLayout";
+import Header from "./sections/header/Header";
+import Aboutus from "./sections/aboutus/Aboutus";
+import OurTeam from "./sections/ourteam/OurTeam";
+import InfoLine from "./components/infoline/InfoLine";
+import TextOverflow from "./components/textoverflow/TextOverflow";
+import "./App.css";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainLayout>
+    <Header />
+    <InfoLine />
+    <TextOverflow title="1. ABOUT US"/>
+    <Aboutus />
+    <TextOverflow title="2. OUR TEAM" description="Of professional trainers"
+     align='left'/>
+     <OurTeam />
+    <TextOverflow title="3. MEMBERSHIPS"/>
+    </MainLayout>
   );
 }
 
 export default App;
+
